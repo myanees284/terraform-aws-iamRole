@@ -1,5 +1,5 @@
 # Default policy to create
-variable "policyNames" {
+variable "policyFilePath" {
   default = "cloudwatch"
 }
 

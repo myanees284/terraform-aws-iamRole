@@ -5,7 +5,7 @@ resource "aws_iam_role" "myIamRole" {
 }
 
 resource "aws_iam_policy" "iamPolicy" {
-  policy = file("policyfile/inlinepolicies.json")
+  policy = file("${var.policyFilePath}")
   name   = "myinlinepolicy"
 }
 
