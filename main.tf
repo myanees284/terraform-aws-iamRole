@@ -1,7 +1,7 @@
 # Create a role
 resource "aws_iam_role" "myIamRole" {
   name               = var.iamRoleName
-  assume_role_policy = file("policyfile/${var.assumeRolePolicyName}.json")
+  assume_role_policy = file("${var.assumeRolePolicyName}")
 }
 
 resource "aws_iam_policy" "iamPolicy" {

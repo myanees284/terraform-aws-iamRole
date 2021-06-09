@@ -10,3 +10,8 @@ variable "assumeRolePolicyName" {
   default = "assume_role_policy"
   type    = string
 }
+
+variable "policyFilePath" {
+  default = "inlinepolicies"
+  type    = string
+}
