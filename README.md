@@ -5,7 +5,7 @@ assumeRolePolicyName - trust relationship json file<br>
 ## Usage
 ~~~
 module "awsRole" {
-  source               = "github.com/myanees284/tf-module-iamRole"
+  source               = "github.com/myanees284/terraform-aws-iamRole"
   policyFilePath       = "policy file name.json"
   assumeRolePolicyName = "assume role.json"
   iamRoleName          = "some role name"
